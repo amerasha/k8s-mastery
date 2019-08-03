@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class SentimentController {
 
-    @Value("${sa.logic.api.url}")
+    @Value("sa.logic.api.url")
     private String saLogicApiUrl;
 
     @PostMapping("/sentiment")

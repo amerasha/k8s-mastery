@@ -16,8 +16,8 @@ spec:
         app: sa-frontend                                  # 6
     spec:
       containers:
-        - image: rinormaloku/sentiment-analysis-frontend
-          imagePullPolicy: Always                         # 7
+        - image: aasha/sentiment-analysis-frontend
+          imagePullPolicy: IfNotPresent                         # 7
           name: sa-frontend
           ports:
             - containerPort: 80
