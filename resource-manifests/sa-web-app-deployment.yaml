@@ -16,8 +16,8 @@ spec:
         app: sa-web-app
     spec:
       containers:
-      - image: rinormaloku/sentiment-analysis-web-app:ingress
-        imagePullPolicy: Always
+      - image: aasha/sa-webapp
+        imagePullPolicy: IfNotPresent
         name: sa-web-app
         env:
           - name: SA_LOGIC_API_URL
